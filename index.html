@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Portfolio</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed-navbar" id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+<section id="home" class="full-page">
+    <div class="container">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Hello, I'm Brahmjyot Singh,</h1>
+                <h3>A Front-end Developer with a deep passion for video editing and content creation.</h3>
+                <a href="#contact" class="contact-button">Let's Talk</a>
+            </div>
+                 
+            <div class="home-photo">
+                <img src="pictures/home-image.jpeg" alt="Your Profile Picture">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="full-page">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        <b>🌐 Frontend Web Development : </b>With a strong foundation in HTML, CSS, and still excelling javascript, I have had the pleasure of crafting user-friendly, responsive, and visually stunning websites. My goal is to make the web a more engaging and accessible place.
+                    </p>
+                    <p>
+                        <b>📸🎥 Photo and Video Editing : </b>Beyond coding, I'm also a visual storyteller. I specialize in photo and video editing, where I've honed my skills to create eye-catching visuals that complement the digital world. Whether it's enhancing images or editing videos, I strive for perfection in every pixel.
+                    </p>
+                    <p>
+                        <b>💻 Programming Proficiency : </b>In addition to web development and creative work, I'm well-versed in programming languages like C and Java. These languages have sharpened my problem-solving abilities and allowed me to approach challenges with precision and efficiency.
+                    </p>
+               </div>
+            </div>
+    </section>
+
+
+    <!-- Services Section -->
+<section id="services" class="full-page">
+    <div class="container">
+        <h2>Services</h2>
+        <div class="services-container">
+            <!-- Service 1 -->
+            <div class="service">
+                <img class="service-image" src="pictures/front-end.JPG" alt="front end image">
+                <h3>Interactive Websites</h3>
+                <p>I can create interactive and user-friendly websites tailored to your needs.</p>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service">
+                <img class="service-image" src="pictures/video editing.JPG" alt="video editing image">
+                <h3>Video Editing</h3>
+                <p>I offer video editing services for vlogs, songs, reels, and shorts.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Skills Section -->
+<section id="skills" class="full-page">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <div class="skill-icon">
+                    <img src="pictures/frontend-skill.JPG" alt="Front-End Development">
+                </div>
+                <div class="skill-name">Front-End Development</div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-icon">
+                    <img src="pictures/java-skill.JPG" alt="Java">
+                </div>
+                <div class="skill-name">Java</div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-icon">
+                    <img src="pictures/c-skill.JPG" alt="C-programming">
+                </div>
+
+                <div class="skill-name">C-programming Language</div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-icon">
+                    <img src="pictures/videoediting-skill.JPG" alt="Adobe premier pro">
+                </div>
+                <div class="skill-name">Video Editing</div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-icon">
+                    <img src="pictures/photo-skill.JPG" alt="Photo Editing">
+                </div>
+                <div class="skill-name">Photo Editing</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="full-page">
+    <div class="container">
+        <h2>My handles</h2>
+        <div class="social-media-buttons">
+            <a href="https://www.instagram.com/brahmjyotsingh_" target="_blank">
+                <div class="social-media-button instagram">
+                    <img src="pictures/instagram-logo.png" alt="Instagram">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/brahmjyot" target="_blank">
+                <div class="social-media-button linkedin">
+                    <img src="pictures/linkedin-logo.png" alt="LinkedIn">
+                </div>
+            </a>
+            <a href="https://github.com/brahmjyot" target="_blank">
+                <div class="social-media-button github">
+                    <img src="pictures/github-logo.png" alt="Github">
+                </div>
+            </a>
+            <a href="mailto:brahm140803@gmail.com" target="_blank">
+                <div class="social-media-button gmail">
+                    <img src="pictures/gmail-logo.png" alt="Gmail">
+                </div>
+            </a>
+            </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    var prevScrollPos = window.pageYOffset;
+    var navbar = document.getElementById("navbar");
+    
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+            // Scrolling up
+            navbar.style.top = "10px";
+        } else {
+            // Scrolling down
+            navbar.style.top = "-80px"; // Adjust the height as needed
+        }
+        prevScrollPos = currentScrollPos;
+    };
+});
+
+
+</script>
+
+</body>
+</html>
